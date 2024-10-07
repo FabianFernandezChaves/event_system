@@ -7,7 +7,6 @@ export default function Dashboard() {
   const events = [
     { nombre: 'Evento 1', lat: 9.9281, lng: -84.0907, imageUrl: '/img/calendar-meet.webp', descripcion: 'Descripción del Evento 1' },
     { nombre: 'Evento 2', lat: 10.0153, lng: -84.2146, imageUrl: '/img/calendar-meet.webp', descripcion: 'Descripción del Evento 2' },
-    // Añade más eventos aquí
   ];
 
   return (

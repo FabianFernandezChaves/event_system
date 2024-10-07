@@ -13,8 +13,8 @@ import {
   AiOutlineLogout,
 } from "react-icons/ai";
 import { BiSolidCalendarEvent } from "react-icons/bi";
-import { FiChevronDown } from "react-icons/fi"; // para el icono del dropdown
-import { usePathname } from 'next/navigation'; // Importamos usePathname
+import { FiChevronDown } from "react-icons/fi"; 
+import { usePathname } from 'next/navigation'; 
 
 const Sidebar = () => {
   const pathname = usePathname(); // Obtiene la ruta actual
@@ -67,7 +67,7 @@ const Sidebar = () => {
           <div className="my-2 bg-gray-600 h-[1px]"></div>
         </div>
 
-        {/* Barra de búsqueda */}
+        {/* Search Bar */}
         <div className="p-2.5 flex items-center rounded-md px-4 bg-gray-700 text-white">
           <AiOutlineSearch />
           <input
@@ -77,7 +77,7 @@ const Sidebar = () => {
           />
         </div>
 
-        {/* Elementos del menú */}
+        {/* Menu Elements */}
         <Link
           href="/demo/user/dashboard"
           className={`p-2.5 mt-3 flex items-center rounded-md px-4 ${
@@ -119,7 +119,6 @@ const Sidebar = () => {
         {/* Menú desplegable */}
         <div
           className={`p-2.5 mt-3 flex items-center rounded-md px-4 hover:bg-blue-600 text-white cursor-pointer ${
-            // Puedes agregar una clase activa si el pathname está dentro de las opciones del dropdown
             pathname.startsWith("/chatbox") ? "bg-blue-600" : ""
           }`}
           onClick={toggleDropdown}

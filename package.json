@@ -13,6 +13,7 @@
     "@material-tailwind/react": "^2.1.10",
     "@react-google-maps/api": "^2.19.3",
     "axios": "^1.7.7",
+    "firebase": "^10.14.0",
     "leaflet": "^1.9.4",
     "leaflet.locatecontrol": "^0.81.1",
     "material-icons": "^1.13.12",
