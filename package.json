@@ -11,12 +11,18 @@
   "dependencies": {
     "@internationalized/date": "^3.5.6",
     "@material-tailwind/react": "^2.1.10",
+    "@react-google-maps/api": "^2.19.3",
+    "axios": "^1.7.7",
+    "leaflet": "^1.9.4",
+    "leaflet.locatecontrol": "^0.81.1",
     "material-icons": "^1.13.12",
     "next": "14.2.13",
     "prop-types": "^15.8.1",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.3.0",
+    "react-leaflet": "^4.2.1",
+    "react-leaflet-markercluster": "^3.0.0-rc1",
     "react-tailwindcss-datepicker": "^1.7.2"
   },
   "devDependencies": {

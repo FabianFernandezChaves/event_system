@@ -36,7 +36,7 @@ const Sidebar = () => {
       {/* Botón para alternar la barra lateral */}
       <div className="flex w-screen justify-between p-2 bg-event-grey lg:hidden">
         <div className="flex items-center">
-          <Image src="/img/generic-logo.webp" width={170} height={65} />
+          <Image src="/img/generic-logo.webp" alt="Logo" width={170} height={65} />
         </div>
         <span
           className={`text-white text-4xl top-5 left-4 cursor-pointer ${
@@ -57,7 +57,7 @@ const Sidebar = () => {
         <div className="text-gray-100 text-xl">
           <div className="p-2.5 mt-1 flex items-center justify-between">
             <div className="flex items-center">
-              <Image src="/img/generic-logo.webp" width={200} height={65} />
+              <Image src="/img/generic-logo.webp" alt="Logo" width={200} height={65} />
             </div>
             <AiOutlineMenu
               className="cursor-pointer lg:hidden"
@@ -91,9 +91,9 @@ const Sidebar = () => {
         </Link>
 
         <Link
-          href="/demo/user/saved-events" 
+          href="/demo/user/dashboard/saved" 
           className={`p-2.5 mt-3 flex items-center rounded-md px-4 ${
-            isActive("/demo/user/saved-events") ? "border-b bg-white bg-opacity-5" : "hover:bg-blue-600"
+            isActive("/demo/user/dashboard/saved") ? "border-b bg-white bg-opacity-5" : "hover:bg-blue-600"
           } text-white`}
         >
           <FaBookmark className="text-2xl" />
