@@ -17,7 +17,7 @@ import { FiChevronDown } from "react-icons/fi";
 import { usePathname } from 'next/navigation'; 
 
 const Sidebar = () => {
-  const pathname = usePathname(); // Obtiene la ruta actual
+  const pathname = usePathname(); 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 

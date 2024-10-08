@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import "leaflet/dist/leaflet.css";
 import axios from 'axios';
-import { useMap } from 'react-leaflet';  // Using React Leaflet's useMap hook
+import { useMap } from 'react-leaflet'
 
 // Dynamically load react-leaflet components without SSR
 const MapContainer = dynamic(() => import("react-leaflet").then(mod => mod.MapContainer), { ssr: false });
