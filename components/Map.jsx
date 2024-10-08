@@ -20,7 +20,7 @@ const Map = ({ events }) => {
   const [searchQuery, setSearchQuery] = useState('');  // Stores the user's search input
   const [searchResult, setSearchResult] = useState(null);  // Stores the search result coordinates
   const [L, setLeaflet] = useState(null);  // Leaflet module loaded on the client-side
-
+ console.log(events)
   /**
    * Effect hook to load Leaflet module and initialize map icons.
    * It also fetches the user's geolocation when the component mounts.
@@ -122,11 +122,11 @@ const Map = ({ events }) => {
 
         {/* Render event markers */}
         {events.map((event, index) => (
-          <Marker key={index} position={[event.lat, event.lng]} icon={createCustomIcon(event.imageUrl)}>
+          <Marker key={index} position={[event.location.latitude, event.location.longitude]} icon={createCustomIcon(event.img)}>
             <Popup>
               <div>
-                <h3 className="font-semibold">{event.nombre}</h3>
-                <p>{event.descripcion}</p>
+                <h3 className="font-semibold">{event.title}</h3>
+                <p>{event.description}</p>
               </div>
             </Popup>
           </Marker>
