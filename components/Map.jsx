@@ -110,7 +110,8 @@ const Map = ({ events }) => {
       <MapContainer
         center={userPosition}  // Initial position
         zoom={11}
-        style={{ height: "500px", width: "100%" }}
+        style={{ height: "500px", width: "100%",  }}
+        className="z-0"
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
